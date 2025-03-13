@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>RASA Demo Page</title>
+    <link href="./style.css" rel="stylesheet">
+    <script type="text/javascript" src="./DreamBooth_files/jquery.mlens-1.0.min.js"></script> 
+    <script type="text/javascript" src="./DreamBooth_files/jquery.js"></script>
+</head>
+
+<body>
+    <h1><strong>RASA: Replace Anyone, Say Anything – A Training-Free Framework for Audio-Driven and Universal Portrait Video Editing</strong></h1>
+    <p id="authors">Tianrui Pan<sup>1,2*</sup>, Lin Liu<sup>2</sup><sup>&#x2709;</sup>, Jie Liu<sup>1</sup><sup>&#x2709;</sup>, Xiaopeng Zhang<sup>2</sup>, Jie Tang<sup>1</sup>, Gangshan Wu<sup>1</sup> <br>Qi Tian<sup>2</sup>
+        <br>
+      <span style="font-size: 18px"><sup>1</sup>State Key Laboratory for Novel Software Technology, Nanjing University; <br><sup>2</sup>Huawei Inc.
+      </span></p>
+      <div style="text-align: center;">
+        <span style="font-size: 14px"><sup>*</sup> Intern in Huawei  &nbsp;&nbsp;&nbsp;&nbsp;  &#x2709; Corresponding Authors</span>
+      </div>
+    
+
+    <div class="content">
+        <h2 style="text-align:center;">LIP EDITING RESULTS</h2>
+        <table id="teasers" class="four-column">
+            <tr>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/ours_lip_reenactment_JackyRosen_1.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">RASA half-body results_1</div>
+                </td>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/ours_lip_reenactment_RudyGiuliani_1.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">RASA half-body results_2</div>
+                </td>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/musetalk_silent_parse_JackyRosen_1_10s-RudyGiuliani_1.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">MuseTalk silent parse</div>
+                </td>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/ours_silent_parse_JackyRosen_RudyGiuliani.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">RASA silent parse</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 第二行：Appearance editing results -->
+    <div class="content">
+        <h2 style="text-align:center;">APPEARANCE EDITING RESULTS</h2>
+        <table id="teasers" class="four-column">
+            <tr>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/source_NancyPelosi.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">source video_1</div>
+                </td>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/ours_headchange_target_NanHayworth_source_NancyPelosi.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">RASA appearance_editing_1</div>
+                </td>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/source_EliotEngel.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">source video_2</div>
+                </td>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/ours_headchange_target_EdMarkey_source_EliotEngel.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">RASA appearance_editing_2</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 第三行：Expanded appearance editing results -->
+    <div class="content">
+        <h2 style="text-align:center;">EXTENDED APPEARANCE EDITING</h2>
+        <table id="teasers" class="four-column">
+            <tr>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/liveportrait_head_yaw_20_roll_20.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">Liveportrait head rotation</div>
+                </td>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/ours_head_yaw_20_roll_20.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">RASA head rotation</div>
+                </td>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/liveportrait_expression_adjustment.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">Liveportrait expression adjustment</div>
+                </td>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/ours_expression_adjustment.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">RASA expression adjustment</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 第四行：Other appearance editing results -->
+    <div class="content">
+        <h2 style="text-align:center;">OTHER APPEARANCE EDITING</h2>
+        <table id="teasers" class="three-column">
+            <tr>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/appearance_change_1.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">RASA appearance_editing_1</div>
+                </td>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/appearance_change_2.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">RASA appearance_editing_2</div>
+                </td>
+                <td>
+                    <video controls class="teaser-img">
+                        <source src="./pics/appearance_change%2Bsinging.mp4" type="video/mp4">
+                    </video>
+                    <div class="description">RASA appearance_editing + singing</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
